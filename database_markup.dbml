@@ -1,0 +1,47 @@
+
+Table Dipartimenti {
+	id integer [pk] [increments]
+	name varchar(20)
+	email varchar(50)
+	phone_number mediumint
+}
+
+Table Corsi {
+	id integer [pk] [increments]
+	dipartimento_id integer >* Dipartimenti.id
+	name varchar(50)
+}
+
+Table Materie {
+	id integer [pk] [increments]
+	teacher_id integer >* Insegnanti.id
+	name varchar
+	CFU smallint
+	hours mediumint
+}
+
+Table Insegnanti {
+	id integer [pk] [increments]
+	name varchar(30)
+	surname varchar(30)
+	age smallint
+	email varchar(50)
+	badge varchar(15) [unique]
+}
+
+Table Studenti {
+	id integer [pk] [increments]
+	id_corso integer [unique] >* Corsi.id
+	name varchar(30)
+	surname varchar(30)
+	email varchar(50)
+}
+
+Table Esame {
+	id integer [pk] [increments]
+	id_materia integer *>* Materie.id
+	id_studente integer *>* Studenti.id
+	date year
+	vote smallint [null]
+}
+
