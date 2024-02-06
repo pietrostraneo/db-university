@@ -45,3 +45,12 @@ FROM `departments`;
 SELECT * 
 FROM `teachers`
 WHERE `phone` IS NULL;
+
+BONUS)
+
+SELECT `name`, `description`, `period`
+FROM `courses`
+WHERE `website` IS NOT NULL
+AND `cfu` BETWEEN 9 AND 12
+AND `year` = 1
+ORDER BY `cfu` DESC;
