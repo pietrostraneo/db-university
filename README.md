@@ -19,6 +19,9 @@ Utilizzare [diagrams](https://www.diagrams.net/) per la creazione dello schema.
 
 Esportare quindi il diagramma in jpg e caricarlo nella repo.
 Buon lavoro!
+### ESERCIZIO CONSEGNATO
+
+
 
 # Esercizio del 2024-02-06
 
@@ -36,3 +39,5 @@ Selezionare nome, descrizione e periodo di tutti i corsi che hanno sito web dive
 
 P.S. Ad ogni query fatta corrisponde un push.
 Buon lavoro.
+
+### ESERCIZIO CONSEGNATO
